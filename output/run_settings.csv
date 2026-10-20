@@ -1,0 +1,2 @@
+"input_file","input_md5","firms","edges","naics_attribute","weight_attribute","naics_digits","tolerance","max_iterations","converged_scenarios","elapsed_seconds"
+"data/network.graphml","0e5e341f676eb6434fcf949cc1a4989b",8,7,"naics","weight",6,0.001,1000,8,0.0330000000000004
