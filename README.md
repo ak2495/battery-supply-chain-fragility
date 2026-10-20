@@ -1,4 +1,5 @@
 # Battery supply chain fragility
+[![DOI](https://zenodo.org/badge/1427212137.svg)](https://doi.org/10.5281/zenodo.23503973)
 
 This repository accompanies the paper:
 
