@@ -1,6 +1,6 @@
 # Validation
 
-This repository provides a simplified implementation and a synthetic numerical example. The checks below assess the implementation; they do not establish equivalence to the full empirical analysis or reproduce the manuscript's figures and tables.
+This repository provides an R implementation and a synthetic numerical example. The checks below assess the implementation; they do not establish equivalence to the full empirical analysis or reproduce the manuscript's figures and tables.
 
 ## Supplied example results
 

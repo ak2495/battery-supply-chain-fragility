@@ -11,7 +11,7 @@ Amir H. Keshavarzzadeh, Qianyi Sun, Giacomo Vaccario, Tobias Hütner-Reisch, Kam
 
 The study examines changes in the structure and fragility of the global battery supply chain over 2015–2025 using firm-level supply relationships and simulated disruptions.
 
-The code provides a simplified implementation of the NAICS-grouped Leontief propagation model used in the study. It demonstrates how distress spreads through supplier–buyer relationships and how firm-level susceptibility and transmission are calculated from individual firm failures. Supplier distress is averaged within each input category using transaction shares as weights. The most disrupted category determines the buyer’s input constraint.
+The code provides an R implementation of the NAICS-grouped Leontief propagation model used in the study. It demonstrates how distress spreads through supplier–buyer relationships and how firm-level susceptibility and transmission are calculated from individual firm failures. Supplier distress is averaged within each input category using transaction shares as weights. The most disrupted category determines the buyer’s input constraint.
 
 The repository includes the propagation model, a script for calculating the impact matrix and firm-level measures, and a synthetic network with example results and numerical tests. It is provided to support understanding and reuse of the methodology. The empirical data and complete analysis underlying the paper’s figures and tables are not included.
 
@@ -141,7 +141,7 @@ For other languages, use `impact_matrix.mtx` together with `matrix_firms.csv`, b
 
 Both `P` and the impact matrix use compressed sparse column storage (`dgCMatrix`). The matrix `P` contains one stored value per edge, and no dense adjacency matrix is constructed. Impact matrix columns are assembled from the positive entries of each scenario without allocating a dense `n × n` matrix. No positive values are removed by a numerical cutoff. Distress and group constraints are stored as ordinary vectors.
 
-A sparse supply network does not necessarily produce a sparse impact matrix. If most firms affect most other firms, storage still grows in proportion to `n²`, and sparse storage can require more memory than dense storage. Column assembly also requires temporary memory. This simplified implementation runs all shocks serially and stores the full result in memory.
+A sparse supply network does not necessarily produce a sparse impact matrix. If most firms affect most other firms, storage still grows in proportion to `n²`, and sparse storage can require more memory than dense storage. Column assembly also requires temporary memory. This R implementation runs all shocks serially and stores the full result in memory.
 
 ## Synthetic example and validation
 
@@ -155,7 +155,7 @@ These tests assess the implementation on numerical examples. They do not establi
 
 ## Licence and citation
 
-This simplified implementation is distributed under the MIT licence in `LICENSE`.
+This R implementation is distributed under the MIT licence in `LICENSE`.
 
 The accompanying manuscript title and author list are provided above. The code is available at https://github.com/ak2495/battery-supply-chain-fragility.
 

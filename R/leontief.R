@@ -1,4 +1,4 @@
-# Simplified NAICS-grouped Leontief propagation accompanying the manuscript.
+# R implementation of the NAICS-grouped Leontief propagation model.
 #
 # Each node represents a firm, and each edge points from a supplier to a buyer.
 # Distress ranges from 0 (unaffected) to 1 (complete failure).

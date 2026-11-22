@@ -1,6 +1,6 @@
 # Synthetic example network
 
-`network.graphml` is an artificial eight-firm supply chain network for demonstrating and testing the simplified code. `network_visualisation.png` illustrates the same graph. These files contain no empirical firm data.
+`network.graphml` is an artificial eight-firm supply chain network for demonstrating and testing the R code. `network_visualisation.png` illustrates the same graph. These files contain no empirical firm data.
 
 A and B supply D from the same NAICS category with weights 3 and 1. C supplies D from another category with weight 2. D supplies E; E and G supply F from different categories; F supplies G. H is isolated. All remaining edge weights are 1. Weights are illustrative purchase values in arbitrary common units.
 
